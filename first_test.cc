@@ -1,3 +1,5 @@
+// THIS IS JUST A WALKTHROUGH OF THE TENSORFLOW TEST PROCESS
+
 // INCLUDING DEPENDENCIES
 
 #include "tensorflow/lite/micro/examples/hello_world/sine_model_data.h"
