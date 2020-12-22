@@ -1,4 +1,6 @@
 // THIS IS JUST A WALKTHROUGH OF THE TENSORFLOW TEST PROCESS
+// I got this working on the Rasberry Pi 4 - with TensorFLowLite 1.15.0 Alpha (not precompiled!)
+// Need to ensure Arduino is reset (two quick clips) before running anything on it...
 
 // INCLUDING DEPENDENCIES
 
