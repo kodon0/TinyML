@@ -129,5 +129,23 @@ inference_count += 1;
 if (inference_count >= kInferencesPerCycle) inference_count = 0;
 }
 
-// 
-// To make this loop run conttinually, the anser is is in main.cc
+//
+// To make this loop run conttinually, the anser is is in main.cc. It is shown below.
+// Includes the main_functions above, does the setup, and does the loop
+
+#include "tensorflow/lite/micro/examples/hello_world/main_functions.h"
+
+// This is the default main used on systems that have the standard C entry
+// point. Other devices (for example FreeRTOS or ESP32) that have different
+// requirements for entry code (like an app_main function) should specialize
+// this main.cc file in a target-specific subfolder.
+// This will run forever (as per while(true)). This is common for microcontrollers
+// There is no multitasking, and this is actually what we want
+// Just continue making inferences and outputting said data to output tensor
+
+int main(int argc, char* argv[]) {
+  setup();
+  while (true) {
+    loop();
+  }
+}
