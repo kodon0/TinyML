@@ -1,6 +1,7 @@
 // IMPORTS...
 //
 // NOTE! Old version of this do NOT have quantization steps...
+//THIS IS (main_functions.cc copy) IS EQUIVALENT TO hello_world example in Arduino IDE
 
 #include "tensorflow/lite/micro/examples/hello_world/main_functions.h"
 
