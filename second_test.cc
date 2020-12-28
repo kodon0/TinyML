@@ -149,3 +149,10 @@ int main(int argc, char* argv[]) {
     loop();
   }
 }
+
+// make -f tensorflow/lite/micro/tools/make/Makefile hello_world
+// PATH ON rpi:  tensorflow/lite/micro/tools/make/gen/linux_armv7l/bin/hello_world
+
+// There is one log per inference, and they are written by HandleOutput() in output_handler.cc
+// Numbers are logged as 1.4546565*2^1 which apparently is a emory efficient way to store floats in micros
+// This code is in debug_log_numbers.cc
